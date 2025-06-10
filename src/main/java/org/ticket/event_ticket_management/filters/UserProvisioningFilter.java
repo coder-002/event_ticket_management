@@ -10,7 +10,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
-import org.ticket.event_ticket_management.domain.User;
+import org.ticket.event_ticket_management.domain.entities.User;
 import org.ticket.event_ticket_management.repositories.UserRepository;
 
 import java.io.IOException;

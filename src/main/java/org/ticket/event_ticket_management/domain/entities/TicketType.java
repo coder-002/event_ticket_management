@@ -1,4 +1,4 @@
-package org.ticket.event_ticket_management.domain;
+package org.ticket.event_ticket_management.domain.entities;
 
 
 import jakarta.persistence.*;
@@ -30,7 +30,10 @@ public class TicketType {
     private String name;
 
     @Column(name = "price", nullable = false)
-    private double price;
+    private Double price;
+
+    @Column(name = "description")
+    private String description;
 
     @Column(name = "total_available")
     private Integer totalAvailable;
@@ -55,11 +58,11 @@ public class TicketType {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         TicketType that = (TicketType) o;
-        return Double.compare(price, that.price) == 0 && Objects.equals(id, that.id) && Objects.equals(name, that.name) && Objects.equals(totalAvailable, that.totalAvailable) && Objects.equals(createdAt, that.createdAt) && Objects.equals(updatedAt, that.updatedAt);
+        return Objects.equals(id, that.id) && Objects.equals(name, that.name) && Objects.equals(price, that.price) && Objects.equals(description, that.description) && Objects.equals(totalAvailable, that.totalAvailable) && Objects.equals(createdAt, that.createdAt) && Objects.equals(updatedAt, that.updatedAt);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, price, totalAvailable, createdAt, updatedAt);
+        return Objects.hash(id, name, price, description, totalAvailable, createdAt, updatedAt);
     }
 }

@@ -1,4 +1,4 @@
-package org.ticket.event_ticket_management.domain;
+package org.ticket.event_ticket_management.domain.entities;
 
 
 import jakarta.persistence.*;
