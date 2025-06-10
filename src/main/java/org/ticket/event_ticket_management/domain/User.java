@@ -48,7 +48,7 @@ public class User {
     )
     private List<Event>staffingEvents = new ArrayList<>();
 
-    //TODO: Organized events, attending events, staffing events
+
 
     @CreatedDate
     @Column(name = "created_at", updatable = false, nullable = false)
@@ -57,6 +57,6 @@ public class User {
 
     @LastModifiedDate
     @Column(name = "updated_at", nullable = false)
-    private LocalDateTime updated;
+    private LocalDateTime updatedAt;
 
 }
