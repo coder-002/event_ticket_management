@@ -22,7 +22,7 @@ public class CreateEventResponseDto {
     private  LocalDateTime salesEnd;
     private EventStatusEnum status;
 
-    private List<CreateTicketTypeRequestDto> ticketTypes;
+    private List<CreateTicketTypeResponseDto> ticketTypes;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 

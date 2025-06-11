@@ -22,4 +22,6 @@ public class CreateTicketTypeRequestDto {
     private String description;
 
     private Integer totalAvailable;
+
+
 }

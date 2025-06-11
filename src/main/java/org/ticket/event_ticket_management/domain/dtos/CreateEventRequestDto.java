@@ -7,6 +7,7 @@ import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.ticket.event_ticket_management.domain.CreateTicketTypeRequest;
 import org.ticket.event_ticket_management.domain.entities.EventStatusEnum;
 
 import java.time.LocalDateTime;
@@ -33,5 +34,5 @@ public class CreateEventRequestDto {
 
     @NotEmpty(message = "At least one ticket type is required")
     @Valid
-    private List<CreateEventRequestDto> ticketTypes;
+    private List<CreateTicketTypeRequest> ticketTypes;
 }

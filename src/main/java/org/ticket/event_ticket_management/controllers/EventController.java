@@ -21,7 +21,7 @@ import org.ticket.event_ticket_management.services.EventService;
 import java.util.UUID;
 
 @RestController
-@RequestMapping(params = "/api/v1/events")
+@RequestMapping(path = "/api/v1/events")
 @RequiredArgsConstructor
 public class EventController {
     private final EventMapper eventMapper;
